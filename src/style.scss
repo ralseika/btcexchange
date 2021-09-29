@@ -96,10 +96,15 @@ form {
     &:focus {
       outline: 0;
     }
-  }
 
-  input.error {
-    border-color: $red;
+    &.error {
+      border-color: $red;
+    }
+
+    &:disabled {
+      background: $white;
+      border-color: $grey;
+    }
   }
 
   label {
@@ -141,7 +146,7 @@ form {
     .currency {
       font-size: $large;
       padding: 0 20px 0 10px;
-      color: $text;
+      color: $grey;
       border: 1px solid $grey;
       border-right: 0;
       line-height: 2.5;
