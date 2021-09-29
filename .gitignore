@@ -1,0 +1,5 @@
+/.DS_Store
+/.webpackcache
+/dist
+/node_modules
+/reactpreview.config.js
