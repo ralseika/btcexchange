@@ -80,6 +80,7 @@ form {
 
   input {
     font-size: $large;
+    margin: 0;
     padding: 0 24px 0 0;
     border: 1px solid #ccc;
     border-left: 0;
@@ -89,6 +90,9 @@ form {
     font-family: $default-font;
     font-weight: bold;
     line-height: 2.5;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
     &:focus {
       outline: 0;
     }
