@@ -24,3 +24,5 @@ export const TEXT_STRINGS = {
   formTitle: "Please enter bitcoin amount:",
   dropDownPlaceholder: "Select currency",
 };
+
+export const GITHUB_URL = "https://github.com/ralseika/btcexchange";

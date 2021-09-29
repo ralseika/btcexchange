@@ -34,6 +34,14 @@ h3 {
   font-size: $medium;
 }
 
+a {
+  text-decoration: none;
+  color: $primary;
+  &:hover {
+    color: $grey;
+  }
+}
+
 .small {
   font-size: $small;
 }
@@ -72,8 +80,9 @@ form {
 
   input {
     font-size: $large;
+    margin: 0;
     padding: 0 24px 0 0;
-    border: 1px solid #ccc;
+    border: 1px solid $grey;
     border-left: 0;
     width: 100%;
     color: $text;
@@ -81,17 +90,20 @@ form {
     font-family: $default-font;
     font-weight: bold;
     line-height: 2.5;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
     &:focus {
       outline: 0;
     }
   }
 
   input.error {
-    border-color: #ff0000;
+    border-color: $red;
   }
 
   label {
-    color: #999;
+    color: $grey;
     display: block;
     margin-bottom: 10px;
     text-transform: uppercase;
@@ -100,8 +112,8 @@ form {
   }
 
   label.error {
-    background-color: #ff0000;
-    color: #fff;
+    background-color: $red;
+    color: $white;
     padding: 6px;
     font-size: 11px;
   }
@@ -129,8 +141,8 @@ form {
     .currency {
       font-size: $large;
       padding: 0 20px 0 10px;
-      color: #999;
-      border: 1px solid #ccc;
+      color: $text;
+      border: 1px solid $grey;
       border-right: 0;
       line-height: 2.5;
       border-radius: 7px 0 0 7px;

@@ -1,6 +1,5 @@
 import React, { ChangeEvent } from "react";
 import { Currency } from "../../../models/Currency";
-import { CURRENCIES_ALL, CurrencyCode } from "../../../utils/constants";
 import { FormControl } from "../FormControl";
 
 // #region -------------- Interfaces -------------------------------------------------------------------

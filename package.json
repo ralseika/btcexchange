@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint --config ./.eslintrc --ext .tsx,.ts src/",
     "serve": "cross-env TS_NODE_PROJECT=\"tsconfig.webpack.json\" ts-node ./webpack.serve.ts",
     "build": "cross-env TS_NODE_PROJECT=\"tsconfig.webpack.json\" ts-node ./webpack.build.ts -e Release"
   },
@@ -22,10 +23,14 @@
     "@types/react": "^17.0.24",
     "@types/react-dom": "^17.0.9",
     "@types/webpack-dev-server": "^4.1.0",
+    "@typescript-eslint/eslint-plugin": "^4.32.0",
+    "@typescript-eslint/parser": "^4.32.0",
     "assets-webpack-plugin": "^7.1.1",
     "cross-env": "^7.0.3",
     "css-loader": "^6.3.0",
-    "eslint-webpack-plugin": "^3.0.1",
+    "eslint": "^7.32.0",
+    "eslint-plugin-react": "^7.26.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
     "fork-ts-checker-webpack-plugin": "^6.3.3",
     "html-webpack-plugin": "^5.3.2",
     "sass": "^1.42.1",
