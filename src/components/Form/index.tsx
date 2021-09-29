@@ -1,11 +1,4 @@
-import React, {
-  ChangeEvent,
-  createRef,
-  useCallback,
-  useEffect,
-  useRef,
-  useState,
-} from "react";
+import React, { useEffect, useState } from "react";
 import "../../style.scss";
 import { BpiDTO, CurrentPriceDTO } from "../../models/CurrentPriceDTO";
 import {
@@ -32,7 +25,7 @@ export default function Form() {
   // #region -------------- Fetch data from API ----------------------------------------------------------------
 
   useEffect(() => {
-    var date = new Date();
+    const date = new Date();
     const url = "https://api.coindesk.com/v1/bpi/currentprice.json";
     const fetchPrices = async () => {
       try {
